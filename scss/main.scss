@@ -26,7 +26,7 @@ h3 {
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
-        background: regba(lighten($primary-color, 2), 0.5);
+        background: rgba(lighten($primary-color, 2), 0.5);
     }
 }
 
@@ -80,7 +80,7 @@ main {
     }
     .bio {
         grid-area: bio;
-        font-size: 1.5rem;
+        font-size: 1.0rem;
     }
     .job-1 {
         grid-area: job1;
@@ -96,6 +96,10 @@ main {
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
     }
+    a {
+        color: $secondary-color;
+        cursor: pointer;
+    }
 }
 
 //Work/Projects
@@ -110,6 +114,29 @@ main {
             opacity: 0.5;
             border-color: $secondary-color;
         }
+    }
+}
+
+.project-name {
+    text-align: center;
+    background: lighten($primary-color, 50);
+    color: #333;
+    padding: 0.5rem;
+    border: 0;
+    &:hover {
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+    }
+}
+
+.project-description {
+    background: darken($primary-color, 50);
+    color: #fff;
+    padding: 0.5rem;
+    border: 0;
+    a {
+        color: $secondary-color;
+        text-decoration: none;
     }
 }
 
