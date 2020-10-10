@@ -182,7 +182,10 @@ main {
     border-bottom: #eece1a 5px solid; }
   .about-info a {
     color: #eece1a;
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: underline; }
+  .about-info .show-text-with-brightness {
+    color: #eece1a; }
 
 .projects {
   display: grid;

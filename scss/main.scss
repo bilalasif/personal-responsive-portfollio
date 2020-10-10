@@ -99,6 +99,10 @@ main {
     a {
         color: $secondary-color;
         cursor: pointer;
+        text-decoration: underline;
+    }
+    .show-text-with-brightness {
+        color: $secondary-color;
     }
 }
 
